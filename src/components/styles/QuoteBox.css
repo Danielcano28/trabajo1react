@@ -1,0 +1,58 @@
+.quotebox {
+  max-width: 400px;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+
+.quoterbox__title {
+  letter-spacing: 3px;
+  padding: 2rem;
+  font-size: 60px;
+}
+
+.quoterbox__title {
+  position: relative;
+  animation: animationBox 1s infinite;
+}
+
+@keyframes animationBox {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.quoterbox__box {
+  letter-spacing: 2px;
+  padding: 20px;
+  border-radius: 1rem;
+  color: black;
+  background-color: #ecdfdf;
+  opacity: 0.5;
+  font-size: 30px;
+  margin: auto 0;
+  max-width: 400px;
+  text-align: center;
+}
+.quoterbox__btn {
+  cursor: pointer;
+  padding: 15px;
+  font-size: 30px;
+  border: none;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.quoterbox__author {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
